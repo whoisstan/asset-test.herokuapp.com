@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby "1.9.3"
 
 gem 'rails', '3.2.6'
 
@@ -21,7 +21,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'rails_12factor', group :production
+group :production do
+  gem 'rails_12factor'
+end
 
 gem 'jquery-rails'
 
